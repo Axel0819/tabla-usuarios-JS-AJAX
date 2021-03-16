@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Tabla de usuarios con AJAX</title>
+	
+</head>
+<body>
+
+	<div class="contenedor">
+		<header>
+			<h1>Tabla de Usuarios</h1>
+			<div>
+				<button id="btn_cargar_usuarios" class="btn active">Cargar Usuarios</button>
+			</div>
+		</header>
+
+		<main>
+			<table id="tabla" class="tabla">
+				<tr>
+					<th>ID</th>
+					<th>Nombre</th>
+					<th>Edad</th>
+					<th>Pais</th>
+					<th>Correo</th>
+				</tr>
+			</table>
+
+			<div class="loader" id="loader"></div>
+
+		</main>
+	</div>
+	
+	<script src="js/ajax.js"></script>
+</body>
+</html>
